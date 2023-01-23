@@ -3,8 +3,8 @@
 
 from formula import combinations as c
 
-m = (c(13, 4))
-n = (c(52, 4))
+m = (c(4, 13))
+n = (c(4, 52))
 p = m / n
 
 print('{:.6f}'.format(p))

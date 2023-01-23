@@ -4,6 +4,6 @@
 
 from formula import combinations as c
 
-p = 1 / (c(10, 3))
+p = 1 / (c(3, 10))
 
 print('{:.5f}'.format(p))

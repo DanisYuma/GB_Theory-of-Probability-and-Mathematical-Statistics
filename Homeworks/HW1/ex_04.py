@@ -3,7 +3,7 @@
 from formula import combinations as c
 
 m = (c(2, 2))
-n = (c(100, 2))
+n = (c(2, 100))
 p = m / n
 
 print('{:.8f}'.format(p))

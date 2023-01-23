@@ -3,8 +3,8 @@
 
 from formula import combinations as c
 
-m = (c(48, 4))
-n = (c(52, 4))
+m = (c(4, 48))
+n = (c(4, 52))
 q = m / n                   # Обратная ситуация, когда тузов нету
 p = 1 - q
 
