@@ -10,5 +10,5 @@ m = 3
 e = 2.72
 
 lamb = n * p
-poisson_m = (lamb ** m / factorial(m)) * (e ** -m)
+poisson_m = (lamb ** m / factorial(m)) * (e ** -lamb)
 print('{:.3f}'.format(poisson_m))
