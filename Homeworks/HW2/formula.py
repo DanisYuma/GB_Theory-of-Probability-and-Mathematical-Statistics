@@ -11,4 +11,4 @@ def bernoulli (k, n, p, q):
 def poison_m (n, p, m):
     lamb = n * p
     e = 2.72
-    return (lamb ** m / factorial(m)) * (e ** -m)
+    return (lamb ** m / factorial(m)) * (e ** -lamb)

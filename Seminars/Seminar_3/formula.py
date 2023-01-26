@@ -11,10 +11,4 @@ def bernoulli (k, n, p, q):
 def poison_m (n, p, m):
     lamb = n * p
     e = 2.72
-    return (lamb ** m / factorial(m)) * (e ** -m)
-
-def median (n, h):
-    if n % 2 == 0:
-        return (z[h - 1] + z[h]) / 2
-    else:
-        return (z[h])
+    return (lamb ** m / factorial(m)) * (e ** -lamb)
