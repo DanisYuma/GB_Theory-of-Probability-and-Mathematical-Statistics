@@ -11,12 +11,15 @@ p1 = 0.8
 p2 = 0.7
 p3 = 0.9
 
-a = p1 / (p1 + p2 + p3)
-b = p2 / (p1 + p2 + p3)
-c = p3 / (p1 + p2 + p3)
-pol = a + b +c
+pa = p1 * (1/4) + p2 * (1/4) + p3 * (1/2)
+pb_a1 = p1 * (1/4) / pa
+pb_a2 = p2 * (1/4) / pa
+pb_a3 = p3 * (1/2) / pa
 
-print('{:.2f}'.format(a))
-print('{:.2f}'.format(b))
-print('{:.2f}'.format(c))
+print('{:.2f}'.format(pb_a1))
+print('{:.2f}'.format(pb_a2))
+print('{:.2f}'.format(pb_a3))
+
+# Проверка себя формула Байеса используется когда другое событие уже произошло, значит сумма равна 1
+pol = pb_a1 + pb_a2 + pb_a3
 print('{:.2f}'.format(pol))
