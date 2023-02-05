@@ -8,9 +8,9 @@ import numpy as np
 x = 179.5
 u = 178.5
 n = 100
-s = np.sqrt(3)
-d = s ** 2
+s = 3
+# d = s ** 2
 
-# z = x - u / d sqrt(n)
-t = (x - u) / (d / np.sqrt(n))
+# z = x - u / (s / sqrt(n))
+t = (x - u) / (s / np.sqrt(n))
 print('{:.3f}'.format(t))
