@@ -8,11 +8,11 @@
 
 import math
 
-z_a2 = 1.96     # из таблицы
+z95 = 1.96     # из таблицы
 x = 24.15
 s = 5
 n = 100
 
-ci = (x - (z_a2 * s / math.sqrt(n)), x + (z_a2 * s / math.sqrt(n)))
+ci = (x - (z95 * s / math.sqrt(n)), x + (z95 * s / math.sqrt(n)))
 
 print(ci)

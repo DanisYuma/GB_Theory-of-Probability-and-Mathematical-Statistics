@@ -20,7 +20,7 @@ print(s)
 p = 0.2
 n = 100
 se = np.sqrt(p * (1 - p) / n)
-z_a2 = 1.96     # из таблицы
-ci = (p - z_a2 * se, p + z_a2 * se)
+z95 = 1.96     # из таблицы
+ci = (p - z95 * se, p + z95 * se)
 
 print(ci)

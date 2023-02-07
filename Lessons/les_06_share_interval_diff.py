@@ -30,8 +30,6 @@ p2 = m2 / n2
 p = (m1 + m2) / (n1 + n2)
 delta = p1 - p2
 sd = np.sqrt(p * (1 - p) * (1/n1 + 1/n2))
-z_a2 = 1.96     # из таблицы
-ci = (delta - z_a2 * sd, delta + z_a2 * sd)
-print(delta)
-print(sd)
+z95 = 1.96     # из таблицы
+ci = (delta - z95 * sd, delta + z95 * sd)
 print(ci)
